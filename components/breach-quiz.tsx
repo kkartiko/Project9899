@@ -30,59 +30,69 @@ const questions: Question[] = [
   {
     id: 1,
     type: "multiple-choice",
-    question: "Which company had the highest breach impact in our dataset?",
-    options: ["T-Mobile", "Meta/Facebook", "Robinhood", "Medibank"],
-    correctAnswer: "Meta/Facebook",
+    question: "Which company in the ones listed had the highest financial impact from a breach?",
+    options: ["Optus", "T-Mobile", "Medibank", "Latitude"],
+    correctAnswer: "Optus",
     explanation:
-      "Meta/Facebook had the highest impact with over $6B in settlements and penalties from various privacy breaches and regulatory fines.",
-    tip: "💡 Large tech companies often face higher penalties due to their massive user bases and stricter regulatory oversight.",
+      "Optus had the highest financial impact out of all of them. Their breach cost over $1.5 billion, primarily due to brand damage and regulatory action. (Queensland Government 2022, Optus data breach, Queensland Government.)",
+    tip: "💡 Brand damage can often outweigh direct remediation costs in large-scale breaches.",
   },
   {
     id: 2,
     type: "true-false",
-    question: "True or False: A breach's total impact includes penalties, settlements, and indirect costs.",
+    question: "True or False: The Optus breach in 2022 had a total impact of over $1.64 billion.",
     options: ["True", "False"],
     correctAnswer: "True",
     explanation:
-      "Breach impacts go far beyond immediate costs, including regulatory fines, legal settlements, reputation damage, customer churn, and operational disruption.",
-    tip: "🔍 The hidden costs of breaches (reputation, customer trust, operational disruption) often exceed the direct financial penalties.",
+      "The breach affected 10 million customers and caused a total impact of $1.64 billion, including brand value loss and penalties.",
+    tip: "🔍 When a breach involves sensitive customer data, it can severely affect the company’s reputation and financial stability.",
+  },
+  {
+    id: 2,
+    type: "true-false",
+    question: "True or False: The Latitude data breach in 2023 had a total projected impact of $76 million.",
+    options: ["True", "False"],
+    correctAnswer: "True",
+    explanation:
+      "The total financial impact of the 2023 Latitude breach had a projected impact of $76 million due to lost revenue and operational disruptions. (Sadler, D 2023, Data breach cost Latitude $76 million, Information Age.)",
+    tip: "💡 Operational disruptions and lost revenue can significantly add to the total financial impact of a data breach.",
   },
   {
     id: 3,
     type: "slider",
-    question: "Guess the total combined impact of all major breaches in our dataset:",
-    correctAnswer: 8.3,
+    question: "Guess the total impact of the 2021 T-Mobile breach (including settlements and penalties):",
+    correctAnswer: 381.5,
     sliderConfig: {
       min: 1,
-      max: 15,
-      step: 0.1,
-      unit: "B",
+      max: 500,
+      step: 1,
+      unit: "M",
     },
     explanation:
-      "The total impact across all major breaches in our dataset is $8.3 billion, highlighting the massive financial consequences of cybersecurity failures.",
-    tip: "📊 Breach costs have increased 12% year-over-year, making cybersecurity investment more critical than ever.",
+      "The total impact of the T-Mobile breach, including a $31.5 million settlement with the FCC and $350 million in class action settlements, is over $381 million. (T-Mobile’s $350M Settlement and the Future of Data Breach Consequences | InformationWeek n.d., www.informationweek.com.)",
+    tip: "📊 Breaches at major companies can lead to settlements that far exceed the initial cost of a breach due to long-term repercussions.",
   },
   {
     id: 4,
     type: "multiple-choice",
-    question: "What percentage of breaches involve human error or social engineering?",
-    options: ["25%", "45%", "65%", "85%"],
-    correctAnswer: "85%",
+    question: "Which company had the breach that exposed the highest number of sensitive documents (such as passport and Medicare numbers)?",
+    options: ["T-Mobile", "Medibank", "Latitude", "Optus"],
+    correctAnswer: "Medibank",
     explanation:
-      "Studies show that 85% of breaches involve human elements, whether through social engineering, phishing, or simple mistakes.",
-    tip: "👥 Employee training and awareness programs are your first line of defense against cyber threats.",
+      "Medibank’s 2022 ransomware attack exposed personal and medical data of 9.7 million Australians, including sensitive medical records. (Queensland Government 2022, Medibank Private cyber incident, Qld.gov.au.)",
+    tip: "🛡️ Ransomware attacks often target highly sensitive personal information, leading to both financial and reputational damage.",
   },
   {
     id: 5,
     type: "true-false",
-    question: "True or False: Small businesses are less likely to be targeted by cybercriminals.",
+    question: "True or False: Robinhood's breach in 2021 was caused by a traditional data breach, where hackers gained unauthorized access to their network.",
     options: ["True", "False"],
     correctAnswer: "False",
     explanation:
-      "Small businesses are actually more likely to be targeted because they often have weaker security measures while still having valuable data.",
-    tip: "🏢 43% of cyberattacks target small businesses, but only 14% are prepared to defend themselves.",
+      "The breach was caused by a social engineering attack where a customer service employee was tricked into providing access to internal support systems. (BBC News 2021, ‘Robinhood trading app hit by data breach affecting seven million’)",
+    tip: "💡 Social engineering can be even more dangerous than technical breaches, as it targets human vulnerabilities.",
   },
-]
+];
 
 interface BreachQuizProps {
   onComplete: (score: number) => void
