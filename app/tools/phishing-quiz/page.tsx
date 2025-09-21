@@ -296,7 +296,7 @@ export default function PhishingQuizPage() {
     return (
       <ToolLayout
         title="Phishing Quiz"
-        description="Test your ability to identify phishing emails and improve your security awareness."
+        description="Phishing is a technique used to trick individuals into disclosing sensitive data by pretending to be known or trusted organisations, usually through email. Test your ability to identify phishing emails and improve your security awareness."
         icon={Target}
         badge="Interactive"
       >

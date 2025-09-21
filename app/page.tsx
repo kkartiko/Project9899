@@ -121,14 +121,11 @@ const vulnerabilityData = [
 ]
 
 const securityFacts = [
-  "95% of successful cyber attacks are due to human error",
-  "A data breach costs an average of $4.45 million globally",
-  "Ransomware attacks occur every 11 seconds worldwide",
-  "Only 5% of company folders are properly protected",
-  "Phishing accounts for 90% of all breaches",
-  "The average time to identify a breach is 287 days",
-  "Cybercrime damages will cost the world $10.5 trillion by 2025",
-  "60% of small companies go out of business within 6 months of a cyber attack",
+  "Good cyber hygiene practices, such as enabling MFA for accounts, is one of the best defences against cybercrime (Australian Signals Directorate (2024). Annual Cyber Threat Report 2023-2024.)",
+  "The average cost of a data breach jumped to USD 4.88 million from USD 4.45 million in 2023 (IBM 2024, Cost of a Data Breach Report 2024, July, IBM.)",
+  "46% of breaches in 2024 involved customer personal data such as emails, phone numbers and tax identification numbers (IBM 2024, Cost of a Data Breach Report 2024, July, IBM.)",
+  "Phishing and compromised or stolen credentials are the most prevalent ways attackers gain access to a network or system (IBM 2024, Cost of a Data Breach Report 2024, July, IBM.)",
+  "It takes 292 days to identify and contain a breach involving stolen credentials (IBM 2024, Cost of a Data Breach Report 2024, July, IBM.)",
 ]
 
 const securityNews = [
